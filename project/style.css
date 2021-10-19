@@ -1,0 +1,198 @@
+
+    @font-face {
+        font-family: Montserrat;
+        src: url(../project/assets/fonts/Montserrat-Bold.ttf);
+    }
+
+    *{
+        font-family: "Lato", "sans-serif";
+        box-sizing: border-box;
+    }
+
+    body{
+        background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+        font-size:1.2rem;
+        font-size: 14px;
+        margin: 0 auto;
+    }
+
+    p, li {
+        font-size: 1.2rem;
+    }
+
+    h1, h2, h3{
+        font-family: "Montserrat", sans-serif;
+    }
+    
+    h1{
+        font-size: 4rem;
+    }
+
+    h2{
+        font-size: 2.2rem;
+    }
+
+    p {
+        max-width: 70ch;
+        line-height: 1.5;
+    }
+
+    header{
+        height: 55vh;
+        background-image: url("assets/img/studentsbg.png");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center top;
+        background-size: cover; 
+        position:relative;
+    }
+
+    header > div{
+        background-color: #c5192d;
+        position: absolute;
+        bottom: -4rem;
+        color: white;
+        text-align: center;
+        padding: 2rem;
+        margin: 0 2.5vw;
+    }
+
+    main{
+        box-shadow: 0px 0px 1px 0px darkgray;
+        background-color: whitesmoke; 
+        margin: 0 auto;
+        max-width: 95vw;
+    }
+
+    #intro-container{
+        background-color: #c5192d;
+        padding: 2rem;
+        margin-top: 6rem;
+    }
+    
+    article {
+        margin: 2rem auto;
+        padding: 2rem;
+    }
+
+    img {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    #intro-container > div > ul > li{
+        list-style-type: none;  
+    }
+
+    article:nth-child(2) {
+        border-bottom: 0.1px solid darkgray;
+    }
+
+    #intro-container > div > ul > li:nth-child(1)::before{
+        content: "\1F64C";
+        width: 1rem;
+        margin: 1rem 1rem 0 1rem;
+    }
+
+    #intro-container > div > ul > li:nth-child(2)::before{
+        content: "\1F3EB";
+        width: 1rem;
+        margin: 1rem 1rem 0 1rem;
+    }
+
+    #intro-container > div > ul > li:nth-child(3)::before{
+        content: "\1F4DA";
+        width: 1rem;
+        margin: 1rem 1rem 0 1rem;
+    }
+
+    footer{
+        background-color: #c5192d;
+        text-align: center;
+        color: white;
+        padding: 2rem;
+        margin: 2rem auto 0;
+        width: 95vw; 
+    }
+
+    footer a {
+        color: white;
+    }
+
+@media screen and (max-width: 960px) and (min-width: 600px){
+    body{
+        font-size: 16px;
+    }
+
+    header{
+        height: 65vh;  
+    }
+
+    main, footer{
+        width: 85%;
+    }
+
+    header > div{
+        width: 85%;
+        margin: 0 7.5vw;
+    }
+    
+    article {
+        margin: 2rem auto;
+        column-count: 2;
+        column-width: 45%;
+        column-gap: 10%;
+    }
+
+    #intro-container{
+        background: linear-gradient(90deg, #c5192d 50%, whitesmoke 50%);
+        border-bottom: 0.1px solid darkgray;
+    }
+
+    article:nth-child(3) {
+        border-bottom: 0.1px solid darkgray;
+    }
+}
+
+@media screen and (min-width: 961px){
+    body{
+        font-size: 24px;
+    }
+
+    header{
+        height: 65vh;
+    }
+
+    header > div{
+        width: 70%;
+        margin: 0 15%;
+    }
+
+    header > div > p, footer>p{
+        margin: 0 auto;
+    }
+
+    footer{
+        margin: 0 auto;
+    }
+
+    article {
+        margin: 2rem auto;
+        column-count: 2;
+        column-width: 45%;
+        column-gap: 10%;
+    }
+
+    #intro-container{
+        background: linear-gradient(90deg, #c5192d 50%, whitesmoke 50%);
+        border-bottom: 0.1px solid darkgray;
+    }
+
+    article:nth-child(3) {
+        border-bottom: 0.1px solid darkgray;
+    }
+
+    div > header, main, footer{
+        width: 70%;
+    }
+}
